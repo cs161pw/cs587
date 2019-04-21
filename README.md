@@ -1,4 +1,4 @@
-# cs587
+# PROJECT - Part 1
 
 Part 1 work:
 
