@@ -42,16 +42,15 @@ int main()
     char string4[53];
 
     char strch;
-    bool hasDup = false;
+    bool isRepeat = false;
 
     for(int i=0;i<50;i++){
         uniqueAra[i] = rand() ;
-        //printf("array[%d] = %d\n\n", i, array[i]);
-        hasDup = false;
+        isRepeat = false;
 
         for(int j=0; j<=(i-1); j++){
                 if (uniqueAra[i] == uniqueAra[j]){
-                    hasDup = true;
+                    isRepeat = true;
                     i--;
                 }
         }
