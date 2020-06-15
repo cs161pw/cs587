@@ -41,3 +41,25 @@ Buffer pool slots are 8 KB in size.
 Query Performance
 
 During execution of a query in PostgreSQL, a number of statistics are gathered, which can be used to measure performance. To limit overhead during query execution, configuration of the postgresql.conf file allow for inclusion or exclusion of specific performance data collection. All of the statistic-gathering is accomplished by the PostgreSQL Statistics Collector, an internal subsystem that can track data about both disk block and individual rows.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Areas of Interest for Benchmarking
+
+For purposes of this project, I chose to explore two areas: joins and indices (in inserts and in queries with aggregate functions). The queries are in the file, benchmarkQueries.sql.
+
+Joins
+
+Test 1: I wrote three queries to test for joins: one that used an inner join in the FROM statement, one that used an inner join as a subquery in the SELECT statement, and one that used two inner joins in the FROM statement. I was particularly interested to see how planning and execution times would vary for the three queries. Also, I was curious to see which join algorithms would be used.
+
+Indices
+
+Test 2: I ran one query that copied the values in tenktup1 to another table, the first time without any indices being created and the second time after creating an index on the unique2 attribute. What I hope to see is how the overhead of planning time when using an index impacts the overall speed of execution.
+
+Test 3: Similar to Test 2, I wrote a single query to test once without an index (in this case, without an index on the attribute being aggregated) and once with. Again, I wanted to explore how use of an index affects planning and execution time.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Results
+
+
