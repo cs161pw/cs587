@@ -15,5 +15,6 @@ Issues encountered: I first wrote the C++ code to generate a space-delimited fil
                     when I tried to save that as a .csv (comma-delimited file), the output did not contain commas & could
                     not be imported directly into pgAmin 4. Therefore, I changed my C++ code to create the comma-delimited
                     output directly. That is easily imported into pgAdmin 4.
+                    
 Lessons learned: I hadn't used the import tool in pgAdmin 4 before. It works quite well for comma delimited files generated
                  from the C++ code.
