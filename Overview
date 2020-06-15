@@ -15,6 +15,6 @@ IN THE REPOSITORY:
 > Part 2 - discussion of rationale for selection of PostgreSQL, of tests to be run, and expected results
 > Part 3 - analysis of testing
 > queries.sql - scripts run to test
-> onetkup_screenShot.png - screen shot of first 10 records of onetkup table
+> onetkup1_screenShot.png - screen shot of first 10 records of onetkup table
 > tentkup_screenShot.png - screen shot of first 10 records of tentkup table
 > tentkup2_screenShot.png - screen shot of first 10 records of tentkup2 table
