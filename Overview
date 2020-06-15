@@ -1,0 +1,17 @@
+This project will use the Wisconsin Benchmark to test the performance of specific queries in PostgreSQL. 
+
+Of particular interest are: comparison of aggregate queries with and without indices, selection of algorithms for join operations, 
+and performance of update queries, with and without indices. 
+
+There are three parts to the project: creation and population of the tables to be used in the testing, 
+a discussion of why PostgreSQL was selected and of the tests to be run, and an analysis of the results of the benchmark testing.
+
+
+IN THE REPOSITORY:
+> Overview
+> benchmarkData.cpp - program to generate data files that follow Wisconsin Benchmark
+> createTables.sql - script to create tables in PostgreSQL
+> Part 1 - description of data file & table creation & population of tables
+> Part 2 - discussion of rationale for selection of PostgreSQL, of tests to be run, and expected results
+> Part 3 - analysis of testing
+> queries.sql - scripts run to test
